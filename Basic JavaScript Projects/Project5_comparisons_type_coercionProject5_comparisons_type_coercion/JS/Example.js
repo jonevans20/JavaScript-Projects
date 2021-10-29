@@ -87,3 +87,20 @@ function not_Function() {
 function NOT_Function() {
     document.getElementById("not").innerHTML = !(6<18); //This statement is true and should result in a return of "false"
 }
+
+
+//Ternary Operators: Ternary means "made up of three parts". It operates on three values. Can be used to assign a value to a variable based on a condition.
+    //Also referred to as a conditional operator in that it assigns a value to a variable based on a condition.
+
+document.write(Bigger=(5>3) ? "Left number is bigger" : "Right number is bigger"); //because 5 is greater than 3, it returns the value "Left number is bigger"
+document.write("<br>");
+
+document.write(Bigger=(3>5) ? "Left number is bigger" : "Right number is bigger"); //reversed the order from previous example, because the first statement is false, it returns the value "Right number is bigger"
+document.write("<br>");
+
+function Ride_Function() {
+    var Height, Can_ride;
+    Height=document.getElementById("Height").value;
+    Can_ride = (Height < 48) ? "You are too short " : "You are tall enough ";
+    document.getElementById("Ride").innerHTML = Can_ride + " to ride.";
+}
