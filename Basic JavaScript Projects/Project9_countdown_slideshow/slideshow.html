@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="eng">
+    
+<head>
+        <title>Project 9: Slideshow</title>
+        <script src="./JS/slideshow.js"></script>
+        <link rel="stylesheet" type="text/css" href="CSS/slideshow.css">
+        <meta charset="utf-8">
+        
+        
+    </head>
+
+    <body>
+        <!--Slideshow project. Reference used: Coding Snow YouTube Channel-->
+        <!--Due to continuous issues with the code from w3schools returning errors in the JavaScript Code,
+        I had to find another guide to help me complete this project-->
+
+        <!--Image Slider Start-->
+        <div class="slider">
+            <div class="slides">
+                <!--radio buttons start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!--radio buttons end-->
+
+                <!--slide images start-->
+                <div class="slide first">
+                    <img src="CSS/images/5b19487f1ae66220008b4a96.png">
+                </div>
+                <div class="slide">
+                    <img src="CSS/images/nasa-juno-spacecraft-image-2020-12-30.jpeg">
+                </div>
+                <div class="slide">
+                    <img src="CSS/images/Screenshot-2017-05-30-12.04.01.png">
+                </div>
+                <!--slide images end-->
+                
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <!--automatic navigation end-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+        <!--Image Slider End-->
+
+
+        
+
+
+
+
+    </body>
+</html>
