@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Arrow Function</title>
+</head>
+<body>
+    <!--Arrow Script Practice-->
+    <p id="demo"></p>
+
+    <!--Array .some() Method-->
+    <button onclick="myFunction()">Click Here</button>
+    <p id="displayAge"></p>
+    
+    <script>
+    //before Arrow Function: 
+    //var hello;
+    //hello=function() {
+        //return "Hello World";
+    //}
+    //document.getElementById("demo").innerHTML= hello();
+
+    //After Arrow Function:
+    var hello;
+    hello = () => {
+        return "Hello World";
+    }
+    document.getElementById("demo").innerHTML = hello()
+
+    //Array .some() Method: JS
+    var ages = [2,10,18,20,13,15,30];
+    //Using the arrow function to pass in a parameter of age
+    checkAge = (age) => age>= 18;
+
+    function myFunction() {
+        //Use the .some() to iterate through the array of ages and display the result.
+        document.getElementById("displayAge").innerHTML = ages.some(checkAge);
+    }
+
+    </script>
+</body>
+</html>
