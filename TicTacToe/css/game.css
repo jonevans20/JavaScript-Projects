@@ -21,7 +21,7 @@ td {
     /*This property sets our table border style.*/
     border: 8px solid #660000;
     /*This property adds some shadow and depth to the lines*/
-    box-shadow: 8px 8px 10px grey;
+    box-shadow: 8px 8px 10px grey, inset 8px 8px 10px grey;
     /*This property removes default padding*/
     padding: 0;
     width: 200px;
