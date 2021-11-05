@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="utf-8">
+		<title>Welcome to Evans Supercars!</title>
+		<link rel="stylesheet" href="./CSS/one_page_website.css">
+	</head>
+	<body>
+		<!--NAV-->
+		<div class="nav">
+			<div class="nav-list">
+				<ul>
+					<a href="#home" id="link"><li>HOME</li></a>
+					<a href="#reviews" id="link"><li>REVIEWS</li></a>
+					<a href="#gallery" id="link"><li>THE GALLERY</li></a>
+					<a href="#contact" id="link"><li>RESERVATIONS</li></a>
+				</ul>
+			</div>
+		</div>
+		<!--END NAV-->
+		
+		
+		<!--WELCOME-->
+		<div id="home">
+			<h2><em>Welcome to Evans Supercars!</em></h2>
+			<p>Welcome to Evans Supercars. We are an enthusiastic group of car guys and gals looking to showcase the best cars on the planet. We look to bring the excitement and passion that these manufacturers have learned to build into their products to the public to allow them to experience the thrill and rush of the speed and sound! <br><br>
+				We will also provide resources and videos to allow the consumer to let his or her imagination take them where it may and when you're ready to pull the trigger on purchasing your favorite supercar, we will provide you with whatever assistance you may require. Reserve your call with us and we will help you anyway we can! <br>
+				<a href="#contact" id="link">Book a call today!</a>
+			</p>
+		</div>
+		<!--END WELCOME-->
+		
+		<!--SUPERCAR REVIEWS-->
+		<div id="reviews">
+			<div class="review">
+				<div>
+					<h2><em>Reviews</em></h2>
+					<article>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/wOidYnBE7vs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<p>Pro-Touring C3 Corvette</p>
+						<br>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/GacP0ap776Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<p>Buick Grand National Documentary</p> <br>
+					</article>
+				</div>
+			</div>
+		</div>
+		<!--END SUPERCAR REVIEWS-->
+		
+		<!--SUPERCAR IMAGES-->
+		<div id="gallery">
+			<h2><em>The Gallery</em></h2>
+			<p>Welcome to the Gallery. Enjoy the views and let it give you inspiration for your next supercar journey!</p>
+			<div class="row">
+				<div class="column">
+					<img src="./images/rimac.png" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Rimac Nevera">
+				</div>
+				<div class="column">
+					<img src="./images/720s.png" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Rimac Nevera">
+				</div>
+				<div class="column">
+					<img src="./images/new_countach.jfif" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Rimac Nevera">
+				</div>
+				<div class="column">
+					<img src="./images/new_countach2.jfif" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Rimac Nevera">
+				</div>
+			</div>
+
+			<!--The Modal/Lightbox-->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+
+					<div class="mySlides">
+						<div class="numbertext">1/4</div>
+						<img src="./images/rimac_wide.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">2/4</div>
+						<img src="./images/720s_wide.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">3/4</div>
+						<img src="./images/new_countach_wide.jfif" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">4/4</div>
+						<img src="./images/new_countach2_wide.jfif" style="width:100%">
+					</div>
+
+					<!--Next/Previous Controls-->
+					<a class="prev" onclick="pluSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+
+					<!--Thumbnail Image Controls-->
+					<div class="column">
+						<img class="demo" src="./images/rimac.png" onclick="currentSlide(1)" alt="">
+					</div>
+
+					<div class="column">
+						<img class="demo" src="./images/720s.png" onclick="currentSlide(2)" alt="">
+					</div>
+
+					<div class="column">
+						<img class="demo" src="./images/new_countach.jfif" onclick="currentSlide(3)" alt="">
+					</div>
+
+					<div class="column">
+						<img class="demo" src="./images/new_countach2.jfif" onclick="currentSlide(4)" alt="">
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!--END SUPERCAR IMAGES-->
+		
+		
+		
+		<!--RSVP-->
+		<section>
+			<div id="contact">
+				<div>
+					<h1>Reservations</h1>
+					<div>
+						<h2><span>Your adventure awaits!</span><br />Reserve your test drive today!</h2>
+						<p>Please provide us with your basic contact information</p>
+						<div>
+							<form action="" method="post">
+								<input class="rsvp" type="text" value="First Name">
+								<input class="rsvp" type="text" value="Last Name">
+								<input class="rsvp" type="text" value="Email Address">
+								<input class="rsvp" type="text" value="Phone Number">
+								<div class="form spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div>
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--END RSVP-->
+		
+		<!--FOOTER-->
+		<div>
+			<script src="./JS/one_page_website.js"></script>
+			www.evanssupercars.com &nbsp;|&nbsp; &copy; 2021
+		</div>
+	</body>
+</html>	
