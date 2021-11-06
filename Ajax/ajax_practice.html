@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ajax Practice</title>
+    </head>
+    <body>
+        <!--The onreadystatechange propety defines a functionto be executed when the readyState
+        changes. The status property and the statusText property holds the status of 
+        XMLHttpRequest object. The onreadystatechange function is called every
+        time the readyState changes-->
+        <!--Reference used: w3schools.com-->
+        <div id="demo">
+        <button type="button" onclick="loadDoc()">Change Content</button>
+        </div>
+
+        <script>
+            function loadDoc() {
+                var xhttp = new XMLHttpRequest(); {
+                    if (this.readyState ==4 && this.status == 200) {
+                        document.getElementById("demo").innerHTML = this.responseText;
+                    }
+                };
+                xhttp.open("GET", "content.html", true);
+                xhttp.send();
+            }
+        </script>
+    </body>
+</html>

@@ -68,8 +68,10 @@ h2 {
 
 iframe {
     box-shadow: 10px 10px 15px black;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 8px;
+    background-color: black;
+    
 }
 
 #gallery {
@@ -96,6 +98,7 @@ iframe {
     border-radius: 7px;
     box-shadow: 8px 8px 12px black;
     border: white;
+    background-color: black;
 }
 
 .grid img:hover {
