@@ -156,14 +156,14 @@ body {
 .vader {
     width: 200px;
     height: 140px;
-    position: reltative;
+    position: relative;
     animation: mymove 7s infinite;
     margin-top: 10px;
 }
 
 @keyframes mymove {
     from {left: 0px;}
-    to {right: 250px;}
+    to {left: 250px;}
 }
 
 /*For the zoom in challenge, I have used the function on the buttons*/
