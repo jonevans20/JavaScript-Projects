@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges</title>
+    <link rel="stylesheet" href="CSS/challenge.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./JS/challenge.js" async></script>
+</head>
+<body>
+    <h1 id="vw">VW Unit Challenge</h1>
+    <!--Responsive Font Size: reference W3Schools.com-->
+    <p style="font-size:6vw;">This is practice setting size with vw units</p>
+    <p style="font-size:9vw;">The last p-element was sized to 6vw</p>
+    <!--/Responsive Font Size-->
+    <a href="#images">Click to see images</a>
+    <!--Form Challenge-->
+    <h1>Form Challenge</h1>
+        <form id="myForm" onsubmit="return validateForm()" method="post" action = "">
+            <label for="firstname">First Name</label><br>
+            <input type="text" id="firstname" name="firstname" placeholder="First Name"><br><br>
+            <label for="lastname">Last Name</label><br>
+            <input type="text" id="lastname" name="lastname" placeholder="Last Name"><br><br>
+            <label for="email">First Name</label><br>
+            <input type="text" id="email" name="email" placeholder="Email"><br><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    <!--/Form Challenge-->
+
+    <!--Popup Form Challenge-->
+    <button class="open-button" onclick="openForm()">Open Form</button>
+    <div class="form-popup" id="popup">
+        <form action="" class="form-container">
+            <h1>Login</h1>
+
+            <label for="username">Username:</label>
+            <input type="text" placeholder="Enter Your Username" name="username" required> 
+            <br>
+            <label for="password">Password:</label>
+            <input type="text" placeholder="Enter Your Password" name="password" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <br>
+    <hr>
+    
+    <!--/Popup Form Challenge-->
+    
+    <div id="images">
+        <!--@keyframes Challenge-->
+        <div class="keyframes">
+            <p>Kid Vader sliding from left to right</p>
+            <img class="vader" src="./Images/vader1.png">
+        </div>
+        <!--/@keyframes Challenge-->
+        
+        <!--Zoom In/Zoom Out Challenge-->
+        <div class="zoom">
+            <img class="stellar" src="Images/blackhole.png">
+        </div>
+    </div>
+    <br>
+    <br>
+    
+    <p class="sith">Darth Vader and Darth Malgus</p>
+    <div id="slideshow">
+        <div>
+            <img class="darth" src="./Images/malgus2.png">
+        </div>
+        <div>
+            <img class="darth" src="Images/vader3.jpg">
+        </div>
+        <div>
+            <img class="darth" src="Images/vader4.jpg">
+        </div>
+        <div>
+            <img class="darth" src="Images/malgus1.PNG">
+        </div>
+    </div> 
+    <br>
+    
+    
+    
+    
+    <a href="#vw">click here to return to top</a>
+</body>
+
+<script>
+    //JS for the fade out is done locally to prevent flickering
+    document.body.classList.add('fade-out');
+
+    //This line is added to make sure the code returns back after the effect it complete
+    window.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.remove('fade-out');
+    });
+
+
+
+</script>
+</html>
